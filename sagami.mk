@@ -26,8 +26,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Include common vendor stuff
-$(call inherit-product, vendor/sony/sm8350-common/sm8350-common-vendor.mk)
+# Include pdx217 vendor stuff
+# $(call inherit-product, vendor/sony/pdx217/pdx217-vendor.mk)
+
+# Include pdx215 vendor stuff
+$(call inherit-product, vendor/sony/pdx215/pdx215-vendor.mk)
+
+# Include pdx214 vendor stuff
+# $(call inherit-product, vendor/sony/pdx214/pdx214-vendor.mk)
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 30
